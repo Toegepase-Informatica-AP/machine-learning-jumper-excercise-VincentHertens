@@ -5,14 +5,17 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public float speed = 10f;
+    public float minSpeed = 10f;
+    public float maxSpeed = 15f;
 
-    // Start is called before the first frame update
+    private Environment environment;
+    private Player player;
+
     void Start()
     {
-        
+        player = transform.parent.parent.gameObject.GetComponentInChildren<Player>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         MoveObstacle();
@@ -20,6 +23,11 @@ public class Obstacle : MonoBehaviour
 
     private void MoveObstacle()
     {
+        if (environment == null)
+        {
+            environment = GetComponentInParent<Environment>();
+        }
+        Debug.Log(speed);
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
@@ -27,6 +35,7 @@ public class Obstacle : MonoBehaviour
     {
         if (other.CompareTag("FinishLine"))
         {
+            player.AddReward(0.15f);
             Destroy(gameObject);
         }
     }

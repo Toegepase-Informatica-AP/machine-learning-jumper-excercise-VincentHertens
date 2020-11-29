@@ -1,0 +1,23 @@
+{
+    "Player": {
+        "checkpoints": [
+            {
+                "steps": 26748,
+                "file_path": "results\\Player-09\\Player\\Player-26748.nn",
+                "reward": null,
+                "creation_time": 1606503468.811594
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 26748,
+            "file_path": "results\\Player-09\\Player.nn",
+            "reward": null,
+            "creation_time": 1606503468.811594
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.0.0"
+    }
+}

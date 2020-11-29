@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1606597585",
+        "python_version": "3.7.5 (tags/v3.7.5:5c02a39a0b, Oct 15 2019, 00:11:34) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\herte\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\mlagents-learn Player-01.yml --run-id Player-12",
+        "mlagents_version": "0.21.1",
+        "mlagents_envs_version": "0.21.1",
+        "communication_protocol_version": "1.2.0",
+        "tensorflow_version": "2.0.0",
+        "numpy_version": "1.19.4",
+        "end_time_seconds": "1606597588"
+    },
+    "total": 2.9331399,
+    "count": 1,
+    "self": 0.19073209999999996,
+    "children": {
+        "run_training.setup": {
+            "total": 0.0077246000000004145,
+            "count": 1,
+            "self": 0.0077246000000004145
+        },
+        "TrainerController.start_learning": {
+            "total": 2.7346831999999996,
+            "count": 1,
+            "self": 0.001376599999999506,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 2.7321223,
+                    "count": 1,
+                    "self": 2.7321223
+                },
+                "trainer_threads": {
+                    "total": 1.3000000000928935e-06,
+                    "count": 1,
+                    "self": 1.3000000000928935e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 0.0011830000000001561,
+                    "count": 1,
+                    "self": 0.0011830000000001561
+                }
+            }
+        }
+    }
+}

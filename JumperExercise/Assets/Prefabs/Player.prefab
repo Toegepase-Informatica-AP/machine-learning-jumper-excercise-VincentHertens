@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3392322096444892656}
   - component: {fileID: 7263807362869300825}
   - component: {fileID: 2055230277493793417}
-  - component: {fileID: 5200662721720970154}
   - component: {fileID: 445689526991549022}
   m_Layer: 0
   m_Name: LeftEye
@@ -80,19 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5200662721720970154
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1759157002074562448}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &445689526991549022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +95,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Obstacle
   m_RaysPerDirection: 1
-  m_MaxRayDegrees: 2.5
+  m_MaxRayDegrees: 3
   m_SphereCastRadius: 3.5
   m_RayLength: 100
   m_RayLayerMask:
@@ -131,7 +117,6 @@ GameObject:
   - component: {fileID: 7377570712829758048}
   - component: {fileID: 1357150134664236047}
   - component: {fileID: 1600436663092126726}
-  - component: {fileID: 6625695787843171635}
   m_Layer: 0
   m_Name: pupil (2)
   m_TagString: Untagged
@@ -198,19 +183,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6625695787843171635
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3036121739537177405}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4153463557704639699
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4153463557704639699}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0, z: 0}
+  m_LocalPosition: {x: 0.25, y: 0, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6032163841344257798}
@@ -278,8 +250,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.99973315, y: 1.0087948, z: 1.0742879}
-  m_Center: {x: -0.19360003, y: 0.5496588, z: 1.0401525}
+  m_Size: {x: 5.7345333, y: 1.0087948, z: 1.5037777}
+  m_Center: {x: -0.43556833, y: 0.5496588, z: 0.8254076}
 --- !u!114 &9026887202847162205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,6 +318,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142b61c335f16e34080abad925780cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  hitpoints: 5
+  jumpStrength: 10
+  episodeEndScore: 50000
 --- !u!1 &5266976443139767322
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,7 +336,6 @@ GameObject:
   - component: {fileID: 2277376762197272820}
   - component: {fileID: 7716727503985434963}
   - component: {fileID: 7938308673469379668}
-  - component: {fileID: 2799973468168290297}
   m_Layer: 0
   m_Name: Mouth
   m_TagString: Untagged
@@ -424,19 +402,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2799973468168290297
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5266976443139767322}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6725878630436757171
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,7 +413,6 @@ GameObject:
   - component: {fileID: 192715005228811394}
   - component: {fileID: 5785010094874839035}
   - component: {fileID: 617316157701327170}
-  - component: {fileID: 5106641887903401730}
   m_Layer: 0
   m_Name: Pupil (1)
   m_TagString: Untagged
@@ -515,19 +479,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5106641887903401730
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6725878630436757171}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6936069457620877903
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +490,6 @@ GameObject:
   - component: {fileID: 4763470251035941236}
   - component: {fileID: 9043025476101082520}
   - component: {fileID: 3902222055005121793}
-  - component: {fileID: 4071373345483987513}
   - component: {fileID: 8164784731124957668}
   m_Layer: 0
   m_Name: RightEye
@@ -608,19 +558,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &4071373345483987513
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6936069457620877903}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8164784731124957668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,11 +570,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SensorName: LeftEyeSensor
+  m_SensorName: RightEyeSensor
   m_DetectableTags:
   - Obstacle
   m_RaysPerDirection: 1
-  m_MaxRayDegrees: 2.5
+  m_MaxRayDegrees: 3
   m_SphereCastRadius: 3.5
   m_RayLength: 100
   m_RayLayerMask:
@@ -659,7 +596,6 @@ GameObject:
   - component: {fileID: 6032163841344257798}
   - component: {fileID: 7308800830966443487}
   - component: {fileID: 2948889970336643673}
-  - component: {fileID: 5640276499113164501}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -726,16 +662,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5640276499113164501
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7798254716332942192}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}

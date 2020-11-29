@@ -1,0 +1,6 @@
+model_checkpoint_path: "Player-409804.ckpt"
+all_model_checkpoint_paths: "Player-249996.ckpt"
+all_model_checkpoint_paths: "Player-299980.ckpt"
+all_model_checkpoint_paths: "Player-349964.ckpt"
+all_model_checkpoint_paths: "Player-399948.ckpt"
+all_model_checkpoint_paths: "Player-409804.ckpt"

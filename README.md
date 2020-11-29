@@ -23,7 +23,6 @@ De opdracht is om een zelflerende player te maken aan de hand van ML-Agents. Doo
 De player moet obstakels ontwijken die op hem afkomen door te springen. Als hij geraakt wordt, krijgt hij minpunten en zal hij opnieuw moeten beginnen, en als hij erover springt, krijgt hij pluspunten. Als laatste zijn er ook nog bonus obstakels. Als deze hem raken, krijgt hij in plaats van minpunten, pluspunten. Hiervoor zal hij dus niet moeten springen.
 
 ![](Images/game.png)
-
 ### 2. Het spel
 #### 2.1 Environment
 Eerst maken we een leeg gameobject aan genaamd environment. Hierin komen al onze objecten te zitten in onze spelomgeving.

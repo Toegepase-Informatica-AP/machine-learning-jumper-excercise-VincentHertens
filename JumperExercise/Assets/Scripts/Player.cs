@@ -6,8 +6,7 @@ using Unity.MLAgents.Sensors;
 
 public class Player : Agent
 {
-    public float jumpStrength = 5f;
-    public int episodeEndScore = 50; 
+    public float jumpStrength = 5f; 
 
     private bool canJump = true;
 

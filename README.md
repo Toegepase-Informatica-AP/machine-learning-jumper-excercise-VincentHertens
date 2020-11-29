@@ -22,13 +22,13 @@ De opdracht is om een zelflerende player te maken aan de hand van ML-Agents. Doo
 
 De player moet obstakels ontwijken die op hem afkomen door te springen. Als hij geraakt wordt, krijgt hij minpunten en zal hij opnieuw moeten beginnen, en als hij erover springt, krijgt hij pluspunten. Als laatste zijn er ook nog bonus obstakels. Als deze hem raken, krijgt hij in plaats van minpunten, pluspunten. Hiervoor zal hij dus niet moeten springen.
 
-![](Images/game.png)
+![](Images/game.PNG)
 
 ### 2. Het spel
 #### 2.1 Environment
 Eerst maken we een leeg gameobject aan genaamd environment. Hierin komen al onze objecten te zitten in onze spelomgeving.
 
-![](Images/environment.png)
+![](Images/environment.PNG)
 
 Het environment object heeft het onderstaande script. Het script bevat 6 variabelen:
 - **Obstacle chance:** kans op 100 dat een vijandig obstakel spawnt, anders spawnt er een bonus obstakel.
@@ -37,7 +37,7 @@ Het environment object heeft het onderstaande script. Het script bevat 6 variabe
 - **Player prefab:** De prefab van de player.
 - **Interval:** De tijd tussen obstakels die spawnen.
 
-![](Images/environmentScript.png)
+![](Images/environmentScript.PNG)
 
 Het environment script is verantwoordelijk voor het spel te beheren. Het script bevat dan ook een aantal methoden om dit te doen.
 
@@ -176,7 +176,7 @@ De player heeft twee ogen waarmee hij de obstakels kan waarnemen. Deze ogen hebb
 #### 2.4 Obstakels
 Hierna maken we een empty gameobject genaamd Obstacles. Hier zullen alle ingespawnde obstacles in worden gezet.
 
-![](Images/obstacles.png)
+![](Images/obstacles.PNG)
 
 ##### 2.4.1 Vijandig obstakel
 Het vijandig obstakel heeft een tag *Obstacle*. Ook heeft het een box collider, rigidbody en een obstacle script. Het obstacle script heeft 3 variabelen:
@@ -184,7 +184,7 @@ Het vijandig obstakel heeft een tag *Obstacle*. Ook heeft het een box collider, 
 - **Min speed:** dit is de minimale speed dat een obstakel kan hebben.
 - **Max speed:** dit is de maximale speed dat een obstakel kan hebben.
 
-![](Images/obstacle.png)
+![](Images/obstacle.PNG)
 
 Het obstacle script is verantwoordelijk om de obstakels te laten bewegen. 
 
@@ -223,7 +223,7 @@ De bonus obstakels bestaan uit dezelfde componenten en script als de vijandige o
 #### 2.6 Finishline 
 De prefab Finishline is, zoals de naam zegt, het einde. Het heeft een tag *FinishLine* en een box collider met *IsTrigger* aangevinkt zodat als een obstakel hier tegen botst, het geregistreerd wordt.
 
-![](Images/finishline.png)
+![](Images/finishline.PNG)
 
 #### 2.7 Spawn 
 Spawn is een empty gameobject. Dit hebben we helemaal in het begin van het platform geplaatst. De plaats van dit gameobject is dan ook de plaats waar de obstakels zullen spawnen.

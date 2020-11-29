@@ -322,9 +322,7 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  hitpoints: 5
   jumpStrength: 10
-  episodeEndScore: 50000
 --- !u!1 &5266976443139767322
 GameObject:
   m_ObjectHideFlags: 0

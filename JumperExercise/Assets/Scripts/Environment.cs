@@ -20,7 +20,7 @@ public class Environment : MonoBehaviour
     private GameObject obstacles;
 
     public float interval = 1f;
-    public float currentTime = 0f;
+    private float currentTime = 0f;
     private float episodeObstaclespeed;
 
     private void FixedUpdate()
